@@ -72,3 +72,23 @@ special token <eok> is used as a separator
 for the anchors.
   
 ![alt text](NLP_Project_Pipeline_Diagram.png)
+
+# Experimental Setup
+  
+  ## Training Setup
+  We fine-tune GPT-2 (with 117 million parameters)
+and generate stories using top-k (with k=50)
+and top-p (with p=0.95) sampling (Holtzman
+et al., 2019). We find this sampling method
+more effective at producing diverse phrases
+than beam-search. GPT-Neo (with 1.5 billion
+parameters) is fine-tuned on TPUEstimator with
+the GELU (Gaussian Error Linear Unit) activation
+function.
+  
+  ### Training Parameters:
+  - Learning Rate : 5.0e-04
+  - Sequence Length : 800
+  - Device : GPU
+  - Epochs : 4
+ 
