@@ -92,3 +92,54 @@ function.
   - Device : GPU
   - Epochs : 4
  
+  ![alt text](Training_Curves.jpeg)
+
+  # Evaluation
+  ## Evaluation Protocols Used
+  - Perplexity
+  - BLEU Score
+  - Prompt Ranking
+  
+  # Results and Discussion
+  ## Results
+  We analyze the effects of our modeling improvements
+through the introduction of anchors on the inference dataset.
+  
+  ![alt text](results.png)
+  
+  ## Discussions
+  
+  ### Generation Quality
+  
+  Our proposed anchor based model exhibits the capability
+of producing unique stories that follow
+a similar language to the posts made on the particular
+subreddit, characterized by a personal and
+accusative tone. Many of the posts made on the
+subreddit r/AITA also have this accusative tone
+and are usually an attempt to absolve oneself from
+blame. A reduction in perplexity score from the
+baseline is indicative of this. However, the model
+has its drawbacks which we elaborate below.
+  
+  ### Inter-Story Repetition
+  
+  The anchor-based models demonstrate that additional
+context grounding through the use of
+keyphrases alleviates some inter-story repetition.
+Despite this, as the maximum length of a story
+grows, the amount of inter-story repetition grows
+proportionally.
+  
+  ### Performance Compared to Bigger
+Models
+  Despite fine-tuning and additional context from anchors,
+GPT-2 based models do not outperform bigger
+pre-trained models (such as GPT-3, GPT-Neo
+with billions of parameters). The bigger pre-trained
+models are generally able to write stories that exhibit
+more likeness to reddit language, indicated by
+a significantly low perplexity. They also write stories
+that are better in terms of diversity, observable
+from a lower BLEU score.
+  
