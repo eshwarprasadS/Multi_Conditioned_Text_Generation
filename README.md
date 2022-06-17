@@ -11,6 +11,8 @@ to the verdict. The verdict label chosen can either
 be one that sheds a positive or negative light on the
 narrator.
 
+![alt text](aita_sample_annotated.png)
+
 ## Novel Contributions
 
 - we propose a neural text generation system that
