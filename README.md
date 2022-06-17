@@ -24,4 +24,34 @@ additional context and direction.
 - Additionally, we use an anchor-based
 approach for gaining control and ensuring event
 coherence in the generated text.
- 
+
+# Method
+
+## Dataset
+
+To power this corpus-driven application, we use
+Reddit API(Reddit, 2019) to extract 121,634 posts
+from r/AITA between January 1, 2014 and January
+1, 2022.
+
+In accordance with our data exploration, we perform
+the following preprocessing steps:
+- Retain only those posts which have more than
+5 upvotes to make sure that posts and the corresponding
+verdicts are meaningful.
+- Retain only those posts with NTA and YTA
+verdicts.
+- Downsampling to balance the dataset between
+the classes YTA and NTA (originally, YTA-
+26%, NTA-74%).
+- Retain posts with over 105 and under 596
+tokens (5th - 95th percentile of word token
+distribution in the dataset).
+
+The resulting dataset consisting of 38,714 posts is
+divided into two parts:
+• Training Data - 37,751 posts
+• Inference Data - 963 posts
+
+Further, we use two methods to extract keyphrases
+for each post:
