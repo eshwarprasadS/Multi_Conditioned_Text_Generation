@@ -50,8 +50,10 @@ distribution in the dataset).
 
 The resulting dataset consisting of 38,714 posts is
 divided into two parts:
-• Training Data - 37,751 posts
-• Inference Data - 963 posts
+- Training Data - 37,751 posts
+- Inference Data - 963 posts
 
 Further, we use two methods to extract keyphrases
 for each post:
+- RAKE
+- KeyBERT
