@@ -57,3 +57,18 @@ Further, we use two methods to extract keyphrases
 for each post:
 - RAKE
 - KeyBERT
+
+## Training
+
+The performance of the naive fine-tuning approach
+falls short of expectations, mainly due to the problem
+of inter-story repetition (refer to results section).
+To keep event-coherence intact and to control
+the flow of the story, we introduce anchors as additional
+training inputs. For this fine-tuning task,
+the prompt is a concatenation of the inputs Title,
+Story, Verdict, Anchors for each sample. Additional
+special token <eok> is used as a separator
+for the anchors.
+  
+![alt text](NLP Project Pipeline Diagram.pdf)
