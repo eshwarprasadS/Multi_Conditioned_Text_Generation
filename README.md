@@ -143,3 +143,22 @@ a significantly low perplexity. They also write stories
 that are better in terms of diversity, observable
 from a lower BLEU score.
   
+# Conclusion and Future Work
+  
+  In this project, we explore conditioned automatic
+story generation in the context of reddit posts. We
+propose and explore two anchor-based approaches
+in addition to simple fine-tuning of pre-trained models
+to achieve better event-coherence in the generated
+stories.
+Our current fine-tuning approach lacks commonsense
+awareness. In the future, we plan to explore
+better common sense grounding techniques. It can also be noted that a generative
+task such as ours is faced with a lack of sophisticated
+automatic evaluation metrics. As an extension,
+we plan to include human evaluation metrics
+such as the triplet pairing task. Finally,
+we hope to try more sophisticated key-phrase
+extraction and topic modeling approaches to improve
+the quality and diversity of the anchors.
+  
