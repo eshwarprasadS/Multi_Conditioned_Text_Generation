@@ -71,4 +71,4 @@ Story, Verdict, Anchors for each sample. Additional
 special token <eok> is used as a separator
 for the anchors.
   
-![alt text](NLP_Project_Pipeline_Diagram.pdf)
+![alt text](NLP_Project_Pipeline_Diagram.png)
