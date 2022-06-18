@@ -131,8 +131,7 @@ Despite this, as the maximum length of a story
 grows, the amount of inter-story repetition grows
 proportionally.
   
-  ### Performance Compared to Bigger
-Models
+  ### Performance Compared to Bigger Models
   Despite fine-tuning and additional context from anchors,
 GPT-2 based models do not outperform bigger
 pre-trained models (such as GPT-3, GPT-Neo
